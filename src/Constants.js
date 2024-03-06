@@ -2,50 +2,111 @@ export const jsQuizz = {
     questions: [
       {
         question:
-          "Which of the following is used in React.js to increase performance?",
+          "တစ်ကုဋေမှာ သုညဘယ်နှစ်လုံးပါဝင်သည်နည်း",
         choices: [
-          "Virtual DOM",
-          "Original DOM",
-          "Both A and B",
-          "None of the above",
+          "၆",
+          "၇",
+          "၈",
+          "၉",
         ],
         type: "MCQs",
-        correctAnswer: "Virtual DOM",
+        correctAnswer: "၇",
       },
       {
-        question: "What is ReactJS?",
+        question: "လူ့ခနွာကိုယ်မှာ အသေးဆုံးအရိုးက ဘယ်နေရာမှာရှိပါလဲ",
         choices: [
-          "Server-side framework",
-          "User Interface framework",
-          "both a and b",
-          "None of the above",
+          "နှာခေါင်း",
+          "ဒူး",
+          "လက်သန်း",
+          "နား",
         ],
         type: "MCQs",
-        correctAnswer: "User Interface framework",
+        correctAnswer: "နား",
       },
       {
         question:
-          "Identify the one which is used to pass data to components from outside",
-        choices: ["Render with arguments", "setState", "PropTypes", "props"],
+          "သက္ကရာဇ် ၁၈၈၅ခုနှစ်ကို ရာစုနှစ်နဲ့ ပြောပါက ",
+        choices: ["၁၇ရာစု ", "၁၈ရာစု", "၁၉ရာစု", "၂၀ရာစု"],
         type: "MCQs",
-        correctAnswer: "props",
+        correctAnswer: "၁၉ရာစု",
       },
       {
-        question: "In which language is React.js written?",
-        choices: ["Python", "Java", "C#", "JavaScript"],
+        question: "အရှည်ဆုံးကမ်းခြေကိုပိုင်ဆိုင်သော နိုင်ငံမှာ ",
+        choices: ["ကနေဒါ", "အမေရိကန်", "ဂျပန်", "ဩစတေးလျ"],
         type: "MCQs",
-        correctAnswer: "JavaScript",
+        correctAnswer: "ကနေဒါ",
       },
       {
-        question: "What is Babel?",
+        question: "ကမ္ဘာ့လေထုထဲမှာ အများဆုံးပါဝင်နေသော ဓာတ်ငွေ့မှာ",
         choices: [
-          "JavaScript interpreter",
-          "JavaScript transpiler",
-          "JavaScript compiler",
-          "None of the above",
+          "အောက်ဆီဂျင်",
+          "နိုက်ထရိုဂျင်",
+          "ကာပွန်ဒိုင်အောက်ဆိုဒ်",
+          "ဟိုက်ဒရိုဂျင်",
         ],
         type: "MCQs",
-        correctAnswer: "JavaScript compiler",
+        correctAnswer: "နိုက်ထရိုဂျင်",
+      },
+      {
+        question: "နေရောင်ခြည်နှင့် ထိတွေ့တဲ့အခါမှာ လူ့ခနွာကိုယ်က ဘာ ဗီတာမင်ဓာတ် ကိုထုတ်ပေးသနည်း",
+        choices: [
+          "ဗီတာမင် A",
+          "ဗီတာမင် B",
+          "ဗီတာမင် C",
+          "ဗီတာမင် D",
+        ],
+        type: "MCQs",
+        correctAnswer: "ဗီတာမင် D",
+      },
+      {
+        question: "ကမ္ဘာ့အမြင့်ဆုံးရေတံခွန် (Angel Fall) သည် မည်သည့်နိုင်ငံတွင်တည်ရှိသနည်း",
+        choices: [
+          "ကိုလံဘီယာ",
+          "တရုတ်",
+          "ဘရာဇီး",
+          "ဗင်နီဇွဲလား",
+        ],
+        type: "MCQs",
+        correctAnswer: "ဗင်နီဇွဲလား",
+      },
+      {
+        question: "နေစကြာဝဠာတွင် အကြီးဆုံးဂြိုလ်မှာ ",
+        choices: [
+          "ကမ္ဘာဂြိုလ်",
+          "စေတန်ဂြိုလ်",
+          "ဂျူပီတာဂြိုလ်",
+          "ပလူတိုဂြိုလ်",
+        ],
+        type: "MCQs",
+        correctAnswer: "ဂျူပီတာဂြိုလ်",
+      },
+      {
+        question: "အံစာတုံး တတုံးတွင် အစက်ပေါင်းမည်မျှပါသနည်း",
+        choices: [
+          "၂၀စက်",
+          "၂၁စက်",
+          "၂၂စက်",
+          "၂၃စက်",
+        ],
+        type: "MCQs",
+        correctAnswer: "၂၁စက်",
+      },
+      {
+        question: "အင်္ဂလိပ်ခရစ်နှစ် ပြက္ခဒိန်တွင် ရက်ပေါင်း၃၀တိတိ ရှိသောလ မည်မျှရှိသနည်း",
+        choices: [
+          "၄လ",
+          "၅လ",
+          "၆လ",
+          "၇လ",
+        ],
+        type: "MCQs",
+        correctAnswer: "၄လ",
       },
     ],
+  };
+
+  export const resultInitalState={
+    score:0,
+    correctAnswers:0,
+    wrongAnswers:0
   };
