@@ -64,11 +64,11 @@ body {
       color: $bg;
     }
   }
-  .footer{
+  .footer {
     display: flex;
     justify-content: flex-end;
   }
-  button{
+  button {
     background: linear-gradient(#102129, #477523, #49361e);
     border-radius: 9px;
     font-size: 18px;
@@ -78,11 +78,28 @@ body {
     border: none;
     margin-top: 15px;
     cursor: pointer;
-    &:disabled{
-        background: $bg-accent;
-        color: $disabled;
-        cursor: not-allowed;
+    &:disabled {
+      background: $bg-accent;
+      color: $disabled;
+      cursor: not-allowed;
     }
   }
 
+  .result {
+    text-align: center;
+    h3 {
+      font-size: 24px;
+      letter-spacing: 1.4px;
+      text-align: center;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+
+      span {
+        color: $primary;
+        font-size: 22px;
+      }
+    }
+  }
 }
