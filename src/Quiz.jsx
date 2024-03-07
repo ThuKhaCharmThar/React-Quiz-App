@@ -29,7 +29,7 @@ const Quiz = ({ questions }) => {
           }
         : {
             ...prev,
-            wrongAnswers: prev.wrongAnswers+1,
+            wrongAnswers: prev.wrongAnswers + 1,
           }
     );
     if (currentQuestion !== questions.length - 1) {
@@ -40,12 +40,10 @@ const Quiz = ({ questions }) => {
     }
   };
 
-  const onTryAgain=()=>{
-
-    setResult(resultInitalState)
+  const onTryAgain = () => {
+    setResult(resultInitalState);
     setShowResult(false);
-
-  }
+  };
 
   return (
     <div className="quiz-container">
