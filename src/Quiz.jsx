@@ -46,20 +46,27 @@ const Quiz = ({ questions }) => {
   };
 
   return (
+    <>
     <div className="quiz-container">
       {!showResult ? (
         <>
           <span className="active-question-no">{currentQuestion + 1}</span>
           <span className="total-question">/{questions.length}</span>
           <ul>
-            <h2>{question}</h2>
+            <h2>
+              {question}
+            </h2>
             {choices.map((answer, index) => (
               <li
                 onClick={() => onAnswerClick(answer, index)}
                 key={answer}
                 className={answerIdx === index ? "selected-answer" : null}
+                
               >
-                {answer}
+                <span className="" data-aos="fade-up"
+                  data-aos-duration="2000">
+                    {answer}
+                  </span>
               </li>
             ))}
           </ul>
@@ -88,6 +95,7 @@ const Quiz = ({ questions }) => {
         </div>
       )}
     </div>
+    </>
   );
 };
 export default Quiz;

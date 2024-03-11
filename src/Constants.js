@@ -1,5 +1,5 @@
 export const jsQuizz = {
-  //အထွေထွေ
+  //အထွေထွေ  10q
   questions1: [
     {
       question: "တစ်ကုဋေမှာ သုညဘယ်နှစ်လုံးပါဝင်သည်နည်း",
@@ -71,7 +71,7 @@ export const jsQuizz = {
     },
   ],
 
-  //မြန်မာနန်းတွင်း
+  //မြန်မာနန်းတွင်း  9q
   questions2: [
     {
       question: "ကုန်းဘောင်မင်းဆက်တွင် အသက်အရှည်ဆုံး ဘုရင်မှာ",
@@ -138,7 +138,7 @@ export const jsQuizz = {
     },
   ],
 
-  //မြန်မာ့သမိုင်း
+  //မြန်မာ့သမိုင်း  10q
   questions3: [
     {
       question: "ဂျပန်ခေတ် မြန်မာနိင်ငံ၏ အဓိပတိမှာ",
@@ -238,7 +238,7 @@ export const jsQuizz = {
     },
   ],
 
-  //မြန်မာ့ရုပ်ရှင်
+  //မြန်မာ့ရုပ်ရှင်  9q
   questions4: [
     {
       question: "မြန်မာ့ပထမဆုံးသော ရုပ်ရှင်ဇာတ်ကားအမည်မှာ မည်သည်ဖြစ်သနည်း",
@@ -325,7 +325,7 @@ export const jsQuizz = {
     },
   ],
 
-  // အာကာသ
+  // အာကာသ  10q
   questions5: [
     {
       question: "နေမဟုတ်သော ကမ္ဘာနှဲ့အနီးဆုံး ကြယ်မှာ မည်သည်ဖြစ်သနည်း",
@@ -407,7 +407,7 @@ export const jsQuizz = {
     },
   ],
 
-  //မြန်မာစာပေ
+  //မြန်မာစာပေ 10q
   questions6: [
     {
       question: "ချစ်ခင်နှစ်သက်ခြင်းကို ဖြစ်စေသည့် ရသမှာ_____",
@@ -489,7 +489,7 @@ export const jsQuizz = {
     },
   ],
 
-  // International Festival
+  // International Festival  10q
   questions7: [
     {
       question:
@@ -567,7 +567,7 @@ export const jsQuizz = {
     },
   ],
 
-  // Math
+  // Math  10q
   questions8: [
     {
       question: "၁၀၀ ရဲ့ သုံးပုံတစ်ပုံကို ဖော်ပြပါ",
@@ -639,13 +639,19 @@ export const jsQuizz = {
     },
   ],
 
-  // Money To Draw Taw Zin
+  // Money To Draw Taw Zin 10q
   questions9: [
     {
       question: "_______ ဓားပြမှန်းသိ",
       choices: ["ပစ္စည်းလုမှ", "‌ဓားနဲ့ထိုးမှ", "ကျောချမှ", "ဓားထောက်မှ"],
       type: "MCQs",
       correctAnswer: "ကျောချမှ",
+    },
+    {
+      question: "မည်သည့်နိုင်ငံသည် ကုန်းတွင်းပိတ်နိုင်ငံဖြစ်သနည်း",
+      choices: ["အိန္ဒိယ", "ဘူတန်", "ဂျပန်", "တရုတ်"],
+      type: "MCQs",
+      correctAnswer: "ဘူတန်",
     },
 
     {
@@ -667,17 +673,12 @@ export const jsQuizz = {
       type: "MCQs",
       correctAnswer: "Jongup",
     },
-
     {
-      question: "အဆိုတော်ချမ်းချမ်း၏ မူရင်းအမည်ကိုဖော်ပြပါ",
-      choices: [
-        "ချမ်းမြငြိမ်း",
-        "‌ငြိမ်းချမ်းမြ",
-        "ချမ်း‌ငြိမ်းသူ",
-        "အေးချမ်းမိုး",
-      ],
+      question:
+        "ကမ္ဘာ့ကျော် Lacoste အမှတ်တံဆိပ်အဝတ်အထည်များတွင် မြန်မာနိုင်ငံမှ ဒေသရင်းမျိုးစိတ်ဖြစ်သော မည်သည့်လိပ်ပုံပါဝင်သနည်း",
+      choices: ["တိုက်လိပ်", "ကြယ်လိပ်", "တောင်လိပ်", "မြောက်လိပ်"],
       type: "MCQs",
-      correctAnswer: "ချမ်းမြငြိမ်း",
+      correctAnswer: "တိုက်လိပ်",
     },
 
     {
@@ -725,6 +726,93 @@ export const jsQuizz = {
       choices: ["$50 million", "$40 million", "$45 million", "$55 million"],
       type: "MCQs",
       correctAnswer: "$40 million",
+    },
+  ],
+
+  //Money To Draw 2  10q
+  questions10: [
+    {
+      question: "နေရောင်ခြည်မှ အဓိကရရှိသော ဓာတ်ကိုဖော်ပြပါ",
+      choices: ["ဗီတာမင် D", "‌ဗီတာမင် C", "ဗီတာမင် A", "ဗီတာမင် B"],
+      type: "MCQs",
+      correctAnswer: "ဗီတာမင် D",
+    },
+
+    {
+      question:
+        "မြန်မာနိုင်ငံ ရှမ်းပြည်နယ်အရှေ့ပိုင်းရှိ  မည်သည့်မြို့သည် ထိုင်းနိုင်ငံ မယ်ဆိုင်မြို့နှင့် နယ်နိမိတ်ချင်းထိစပ်နေသနည်း",
+      choices: ["နမ့်ဆန်", "တာချီလိတ်", "ကျိုင်းတုံ", "လားရှိုး"],
+      type: "MCQs",
+      correctAnswer: "တာချီလိတ်",
+    },
+
+    {
+      question:
+        "Hanbok ရိုးရာအဝတ်အစားသည် မည်သည့်နိုင်ငံ၏ရိုးရာအဝတ်အစားဖြစ်သနည်း",
+      choices: ["လာအို", "တောင်ကိုရီးယား", "ဗီယက်နမ်", "ထိုင်း"],
+      type: "MCQs",
+      correctAnswer: "တောင်ကိုရီးယား",
+    },
+
+    {
+      question:
+        "2014  ခုနှစ်ကမ္ဘာ့ဖလားပြိုင်ပွဲတွင် ရွှေဘောလုံးဆုကို ရရှိခဲ့သူမှာ မည်သူနည်း",
+      choices: [
+        "Diego Maradona",
+        "Cristiano Ronaldo",
+        "Diego Forlan",
+        "Lionel Messi",
+      ],
+      type: "MCQs",
+      correctAnswer: "Lionel Messi",
+    },
+    {
+      question: "ကျပန်းစကားပြောခြင်းကို မည်သို့ခေါ်သနည်း",
+      choices: [
+        "Impromptu  Speech",
+        "Humorous Speech",
+        "Sudden Speech",
+        "Persuasive Speech",
+      ],
+      type: "MCQs",
+      correctAnswer: "Impromptu  Speech",
+    },
+
+    {
+      question:
+        "Darth Vader ဆိုသောဇာတ်ကောင်နာမည်သည်မည်သည့်ဇာတ်ကားထဲမှ ဖြစ်သနည်း",
+      choices: ["The Mummy", "Star Wars", "Scarlet Street", "Dune Part Two"],
+      type: "MCQs",
+      correctAnswer: "Star Wars",
+    },
+    {
+      question:
+        "ခံတံ၏ သစ်သားအိမ်ပြုလုပ်ရန် မည်သည့်သစ်အမျိုးအစားသည် အကောင်းဆုံးဖြစ်သနည်း",
+      choices: ["ပိတောက်", "ထင်းရူး", "ကျွန်း", "သစ်ကတိုး"],
+      type: "MCQs",
+      correctAnswer: "ထင်းရူး",
+    },
+
+    {
+      question: "ကြောင်၏နားရွက်တွင် ကြွက်သားမည်မျှပါသနည်း",
+      choices: ["39", "32", "27", "24"],
+      type: "MCQs",
+      correctAnswer: "32",
+    },
+
+    {
+      question:
+        "Mother Teresa သည်မည်သည့်ခုနှစ်တွင် ငြိမ်းချမ်းရေးနိုဘယ်ဆုကိုရရှိခဲ့သနည်း",
+      choices: ["1982", "1979", "1962", "1945"],
+      type: "MCQs",
+      correctAnswer: "1979",
+    },
+    {
+      question:
+        "Ives W.McGaffey သည်မည်သည့်ပစ္စည်းကို စတင်တီထွင်နိုင်ခဲ့သူဖြစ်သနည်း",
+      choices: ["X rays", "Vacuum cleaner"],
+      type: "MCQs",
+      correctAnswer: "Vacuum cleaner",
     },
   ],
 };

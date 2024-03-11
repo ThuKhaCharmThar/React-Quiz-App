@@ -1,13 +1,14 @@
 import Quiz from './Quiz'
 import { jsQuizz } from './Constants'
+import Home from './Home'
 
 function App() {
 
   return (
     <>
-    <Quiz questions={jsQuizz.questions2}/>
+    <Home/>
+    {/* <Quiz questions={jsQuizz.questions4}/> */}
     </>
   )
 }
-
 export default App
