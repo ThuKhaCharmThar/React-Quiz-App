@@ -1,13 +1,17 @@
 import Quiz from './Quiz'
 import { jsQuizz } from './Constants'
 import Home from './Home'
+import Navbars from './Navbar'
+import AboutUs from './AboutUs'
 
 function App() {
 
   return (
     <>
-    <Home/>
-    {/* <Quiz questions={jsQuizz.questions4}/> */}
+    <Navbars/>
+    {/* <Home/> */}
+    <AboutUs/>
+    {/* <Quiz questions={jsQuizz.questions3}/> */}
     </>
   )
 }
