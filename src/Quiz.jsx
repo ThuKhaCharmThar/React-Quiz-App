@@ -51,16 +51,18 @@ const Quiz = ({ questions }) => {
       <div className="quiz-container">
         {!showResult ? (
           <>
+          <div className="text-center">
             <span className="active-question-no">{currentQuestion + 1}</span>
             <span className="total-question"><span className="spa">/</span>{questions.length}</span>
+            </div>
             <ul>
-              <h2 className="text-light">{question}</h2>
-              <div className="row">
+              <h2 className="text-light text-center">{question}</h2>
+              <div className="row mt-5 col-6 offset-3">
                 {choices.map((answer, index) => (
                   <li
                     onClick={() => onAnswerClick(answer, index)}
                     key={answer}
-                    className={`${answerIdx === index ? "selected-answer" : null} col-md-6`}
+                    className={`${answerIdx === index ? "selected-answer" : null}`}
                   >
                     <span
                       className=""
@@ -73,7 +75,7 @@ const Quiz = ({ questions }) => {
                 ))}
               </div>
             </ul>
-            <div className="footer">
+            <div className="footter">
               <button onClick={onClickNext} disabled={answerIdx === null}>
                 {currentQuestion === questions.length - 1 ? "finish" : "Next"}
               </button>

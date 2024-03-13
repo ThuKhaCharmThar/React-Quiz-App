@@ -18,14 +18,37 @@ body {
 }
 
 .quiz-container {
-  width: 500px;
-  height: auto;
+  width: auto;
+  max-width: 500px;
+  height: 90vh;
   max-height: 600px;
   background:#000000;
   border-radius: 4px;
-  margin-top: 50px;
-  padding: 30px 60px;
+  margin: 50px auto;
+  padding: 30px 20px;
   box-sizing: border-box;
+
+  .quiz-container ul {
+    padding: 0;
+  }
+  
+  .quiz-container ul li {
+    list-style: none; /* Remove default list styling */
+    margin-bottom: 10px; /* Add some space between choices */
+    text-align: center; /* Center align text */
+    cursor: pointer;
+    padding: 10px; /* Add padding to improve touchability */
+    background-color: #333; /* Background color for better visibility */
+    border-radius: 4px;
+    width: 70%; /* Set width to 70% */
+    margin: 0 auto; /* Center the li elements */
+  }
+  
+  @media (max-width: 768px) {
+    .quiz-container {
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  }
 
   .active-question-no {
     font-size: 32px;
@@ -56,6 +79,7 @@ body {
       list-style: none;
       color: $foreground;
       font-size: 16px;
+      text-align: center;
       background: $bg;
       border: 1px solid $disabled;
       border-radius: 16px;
@@ -70,7 +94,7 @@ body {
       color: $bg;
     }
   }
-  .footer {
+  .footter {
     display: flex;
     justify-content: flex-end;
   }

@@ -3,6 +3,8 @@ import yzh from "../src/yezawhtet1.png";
 import tha from "../src/thanhtooaung.jpg";
 import money from "../src/Money_Drop_Myanmar 1.jpg";
 import milli from "../src/Quest_to_Million.jpg";
+import ttk from "../src/TT.jfif";
+
 import wiki from "../src/Wikipedia.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -11,32 +13,54 @@ import "./AboutUs.scss";
 const AboutUs = () => {
   return (
     <div className="container mt-5">
-      <h1 className="text-center mt-3 text-white"data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="500"
-  data-aos-offset="100">About Us</h1>
+      <h1
+        className="text-center mt-3 text-white"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-delay="500"
+        data-aos-offset="100"
+      >
+        About Us
+      </h1>
 
       <div className="row p-5 mb-5">
         <div className="col-md-8 offset-2 d-flex">
-          <img src={tkct} alt="bu" className="about-img"data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1000"
-  data-aos-offset="100" />
+          <img
+            src={ttk}
+            alt="bu"
+            className="about-img"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="1000"
+            data-aos-offset="100"
+          />
           <ul className="mx-5" style={{ lineHeight: "2.5" }}>
-            <h4 className="text-white" data-aos="fade-down"
-  data-aos-duration="1500"
-  data-aos-delay="1500"
-  data-aos-offset="100">Thu Kha Chan Thar</h4>
-            <h6 className=""data-aos="fade-down"
-  data-aos-duration="1500"
-  data-aos-delay="1400"
-  data-aos-offset="100" style={{ color: "#FFDAB9" }}>
+            <h4
+              className="text-white"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              data-aos-delay="1500"
+              data-aos-offset="100"
+            >
+              Thu Kha Chan Thar
+            </h4>
+            <h6
+              className=""
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              data-aos-delay="1400"
+              data-aos-offset="100"
+              style={{ color: "#FFDAB9" }}
+            >
               Junior Developer
             </h6>
-            <li className="list-unstyled" data-aos="fade-down"
-  data-aos-duration="1500"
-  data-aos-delay="1300"
-  data-aos-offset="100">
+            <li
+              className="list-unstyled"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              data-aos-delay="1300"
+              data-aos-offset="100"
+            >
               <FontAwesomeIcon icon={faPhone} style={{ color: "white" }} />
               <span className="mx-2">
                 <a
@@ -47,10 +71,13 @@ const AboutUs = () => {
                 </a>
               </span>
             </li>
-            <li className="list-unstyled"data-aos="fade-down"
-  data-aos-duration="1500"
-  data-aos-delay="1200"
-  data-aos-offset="100">
+            <li
+              className="list-unstyled"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              data-aos-delay="1200"
+              data-aos-offset="100"
+            >
               <FontAwesomeIcon icon={faEnvelope} style={{ color: "white" }} />
               <span className="mx-2">
                 <a
@@ -61,10 +88,13 @@ const AboutUs = () => {
                 </a>
               </span>
             </li>
-            <li className="list-unstyled"data-aos="fade-down"
-  data-aos-duration="1500"
-  data-aos-delay="1100"
-  data-aos-offset="100">
+            <li
+              className="list-unstyled"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              data-aos-delay="1100"
+              data-aos-offset="100"
+            >
               <FontAwesomeIcon icon={faGithub} style={{ color: "white" }} />
               <span className="mx-2">
                 <a
@@ -81,14 +111,23 @@ const AboutUs = () => {
 
       <hr className="p-3" style={{ color: "#ffffff" }} />
 
-      <h1 className="text-center text-white mb-5"data-aos="fade-down"
-  data-aos-duration="1500"
-  data-aos-delay="500"
-  data-aos-offset="100">Counselling With Friends </h1>
-      <h6 className="text-center m-lg-5"data-aos="fade-up"
-  data-aos-duration="1500"
-  data-aos-delay="1000"
-  data-aos-offset="100" style={{ color: "#CCCCCC" }}>
+      <h1
+        className="text-center text-white mb-5"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        data-aos-delay="500"
+        data-aos-offset="100"
+      >
+        Counselling With Friends{" "}
+      </h1>
+      <h6
+        className="text-center m-lg-5"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="1000"
+        data-aos-offset="100"
+        style={{ color: "#CCCCCC" }}
+      >
         Thanks to
         <span className="" style={{ color: "#90EE90" }}>
           {" "}
@@ -106,20 +145,32 @@ const AboutUs = () => {
         <div className="row mt-5 mb-5">
           <div className="col-md-8 offset-2 d-flex">
             <ul className="mx-5" style={{ lineHeight: "2.5" }}>
-              <h4 className="text-white"data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1100"
-  data-aos-offset="100">Ye Zaw Htet</h4>
-              <h6 className=""data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1200"
-  data-aos-offset="100" style={{ color: "#FFDAB9" }}>
+              <h4
+                className="text-white"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-delay="1100"
+                data-aos-offset="100"
+              >
+                Ye Zaw Htet
+              </h4>
+              <h6
+                className=""
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-delay="1200"
+                data-aos-offset="100"
+                style={{ color: "#FFDAB9" }}
+              >
                 Junior Developer
               </h6>
-              <li className="list-unstyled"data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1300"
-  data-aos-offset="100">
+              <li
+                className="list-unstyled"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-delay="1300"
+                data-aos-offset="100"
+              >
                 <FontAwesomeIcon icon={faPhone} style={{ color: "white" }} />
                 <span className="mx-2">
                   <a
@@ -130,10 +181,13 @@ const AboutUs = () => {
                   </a>
                 </span>
               </li>
-              <li className="list-unstyled"data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1400"
-  data-aos-offset="100">
+              <li
+                className="list-unstyled"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-delay="1400"
+                data-aos-offset="100"
+              >
                 <FontAwesomeIcon icon={faEnvelope} style={{ color: "white" }} />
                 <span className="mx-2">
                   <a
@@ -144,10 +198,13 @@ const AboutUs = () => {
                   </a>
                 </span>
               </li>
-              <li className="list-unstyled"data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1500"
-  data-aos-offset="100">
+              <li
+                className="list-unstyled"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-delay="1500"
+                data-aos-offset="100"
+              >
                 <FontAwesomeIcon icon={faGithub} style={{ color: "white" }} />
                 <span className="mx-2">
                   <a
@@ -159,34 +216,56 @@ const AboutUs = () => {
                 </span>
               </li>
             </ul>
-            <img src={yzh} alt="bu" className="about-img bg-light"data-aos="fade-left"
-  data-aos-duration="1500"
-  data-aos-delay="1000"
-  data-aos-offset="100" />
+            <img
+              src={yzh}
+              alt="bu"
+              className="about-img bg-light"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="1000"
+              data-aos-offset="100"
+            />
           </div>
         </div>
 
         <div className="row mt-5">
           <div className="col-md-8 offset-2 d-flex">
-            <img src={tha} alt="bu" className="about-img"data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1000"
-  data-aos-offset="100" />
+            <img
+              src={tha}
+              alt="bu"
+              className="about-img"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="1000"
+              data-aos-offset="100"
+            />
             <ul className="mx-5" style={{ lineHeight: "2.5" }}>
-              <h4 className="text-white"data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1100"
-  data-aos-offset="100">Than Htoo Aung</h4>
-              <h6 className=""data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1200"
-  data-aos-offset="100" style={{ color: "#FFDAB9" }}>
+              <h4
+                className="text-white"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-delay="1100"
+                data-aos-offset="100"
+              >
+                Than Htoo Aung
+              </h4>
+              <h6
+                className=""
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-delay="1200"
+                data-aos-offset="100"
+                style={{ color: "#FFDAB9" }}
+              >
                 Junior Developer
               </h6>
-              <li className="list-unstyled"data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1300"
-  data-aos-offset="100">
+              <li
+                className="list-unstyled"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-delay="1300"
+                data-aos-offset="100"
+              >
                 <FontAwesomeIcon icon={faPhone} style={{ color: "white" }} />
                 <span className="mx-2">
                   <a
@@ -197,10 +276,13 @@ const AboutUs = () => {
                   </a>
                 </span>
               </li>
-              <li className="list-unstyled"data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1400"
-  data-aos-offset="100">
+              <li
+                className="list-unstyled"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-delay="1400"
+                data-aos-offset="100"
+              >
                 <FontAwesomeIcon icon={faEnvelope} style={{ color: "white" }} />
                 <span className="mx-2">
                   <a
@@ -211,10 +293,13 @@ const AboutUs = () => {
                   </a>
                 </span>
               </li>
-              <li className="list-unstyled"data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1500"
-  data-aos-offset="100">
+              <li
+                className="list-unstyled"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-delay="1500"
+                data-aos-offset="100"
+              >
                 <FontAwesomeIcon icon={faGithub} style={{ color: "white" }} />
                 <span className="mx-2">
                   <a
@@ -225,7 +310,6 @@ const AboutUs = () => {
                   </a>
                 </span>
               </li>
-
             </ul>
           </div>
         </div>
@@ -233,28 +317,38 @@ const AboutUs = () => {
 
       <hr className="mt-5" style={{ color: "#ffffff" }} />
 
-      <h1 className="text-center mt-5 text-white"data-aos="fade-down"
-  data-aos-duration="1500"
-  data-aos-delay="500"
-  data-aos-offset="100">Reference</h1>
+      <h1
+        className="text-center mt-5 text-white"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        data-aos-delay="500"
+        data-aos-offset="100"
+      >
+        Reference
+      </h1>
 
       <div className="d-flex justify-content-around mt-5 p-lg-5">
-        <div className="card himg bg-black border-0 rounded-5"data-aos="fade-right"
-  data-aos-duration="1500"
-  data-aos-delay="1000"
-  data-aos-offset="100">
+        <div
+          className="card himg bg-black border-0 rounded-5"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-delay="1000"
+          data-aos-offset="100"
+        >
           <img
             src={money}
             className="card-img-top img-fluid rounded-5"
             alt="Quest to Million"
             style={{ minHeight: "200px", maxWidth: "200px" }}
-
           />
         </div>
-        <div className="card himg bg-black border-0 rounded-5"data-aos="fade-up"
-  data-aos-duration="1500"
-  data-aos-delay="1000"
-  data-aos-offset="100">
+        <div
+          className="card himg bg-black border-0 rounded-5"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="1000"
+          data-aos-offset="100"
+        >
           <img
             src={wiki}
             className="card-img-top img-fluid rounded-5"
@@ -263,10 +357,13 @@ const AboutUs = () => {
           />
         </div>
 
-        <div className="card himg bg-black border-0 rounded-5"data-aos="fade-left"
-  data-aos-duration="1500"
-  data-aos-delay="1000"
-  data-aos-offset="100">
+        <div
+          className="card himg bg-black border-0 rounded-5"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-delay="1000"
+          data-aos-offset="100"
+        >
           <img
             src={milli}
             className="card-img-top rounded-5"
