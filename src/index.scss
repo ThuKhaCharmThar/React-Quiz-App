@@ -5,11 +5,12 @@ $bg-accent: #e7e8e9;
 $foreground: #2d264b;
 $disabled: #9c9c9c;
 
+
 body {
   font-family: monospace;
   background: linear-gradient(to right, #000000, #000003);
   color: $foreground;
-  display: flex;
+  // display: flex;
   justify-content: center;
   margin: 0 auto;
   padding: 0;
