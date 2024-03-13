@@ -4,4 +4,9 @@
     border-radius: 50%; /* Make the image circular */
     overflow: hidden; /* Clip the image to the circular shape */
   }
-  
+
+  .himg:hover{
+    box-shadow: -1px 1px 30px 1px rgba(255,255,255,0.75);
+    transition: box-shadow 0.3s;
+    
+  }

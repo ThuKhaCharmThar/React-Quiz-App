@@ -12,11 +12,19 @@ const Home = () => {
     { id: 6, name: "သင်္ချာ" },
     { id: 7, name: "ပွဲတော်များ" },
     { id: 8, name: "မြန်မာ့ရုပ်ရှင်" },
+    { id: 9, name: "Category9" },
+    { id: 10, name: "Category10" },
+    { id: 11, name: "Category11" },
+    { id: 12, name: "Category12" },
+    { id: 13, name: "Category13" },
+    { id: 14, name: "Category14" },
+    { id: 15, name: "Category15" },
     // Add more categories as needed
   ];
 
   return (
     <div className="Home">
+      <h1 className="text-center text-white p-lg-5">Categories</h1>
       <div
         className=""
         style={{
@@ -37,6 +45,7 @@ const Home = () => {
           </a>
         ))}
       </div>
+      <div className="mb-5"></div>
     </div>
   );
 };

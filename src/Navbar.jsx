@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 const Navbars = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-black">
       <h1 class="navbar-brand text-light mt-2">
-        <span className="colorful-text">EREN's QUIZZ</span>
+        <span className="colorful-text mx-5">EREN's QUIZZ</span>
       </h1>
       <button
         class="navbar-toggler"
@@ -23,22 +24,24 @@ const Navbars = () => {
       >
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active Navw">
-            <a class="text-light " href="#">
-              <span></span>
+            <Link to={"/"} className="text-light">
+            <span></span>
               <span></span>
               <span></span>
               <span></span>
               Home
-            </a>
+            </Link>
+            {/* <a class="text-light " href="#"> */}
+            {/* </a> */}
           </li>
           <li class="nav-item active Navww mx-5">
-            <a class="text-light " href="#">
+            <Link to={"/aboutus"} className="text-light">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
               About Us
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

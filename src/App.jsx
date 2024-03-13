@@ -1,18 +1,18 @@
-import Quiz from './Quiz'
-import { jsQuizz } from './Constants'
-import Home from './Home'
-import Navbars from './Navbar'
-import AboutUs from './AboutUs'
+import Footer from './Footer';
+import Navbars from './Navbar';
+import { Outlet } from 'react-router-dom';
 
 function App() {
-
   return (
-    <>
-    <Navbars/>
-    {/* <Home/> */}
-    <AboutUs/>
-    {/* <Quiz questions={jsQuizz.questions3}/> */}
-    </>
-  )
+    <div className="App">
+        <Navbars />
+        
+          <Outlet/>
+        
+        <Footer />
+      
+    </div>
+  );
 }
-export default App
+
+export default App;
