@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   // Define your categories here, you can replace these with your actual categories
@@ -22,6 +23,7 @@ const Home = () => {
     // Add more categories as needed
   ];
 
+
   return (
     <div className="Home">
       <h1 className="text-center text-white p-lg-5">Categories</h1>
@@ -36,13 +38,19 @@ const Home = () => {
         }}
       >
         {categories.map((category) => (
-          <a href="#" key={category.id}>
+          <Link 
+          to={`/quiz/${category.id}`} key={category.id}
+          >
+          <a>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             {category.name}
           </a>
+          
+          </Link>
+          
         ))}
       </div>
       <div className="mb-5"></div>

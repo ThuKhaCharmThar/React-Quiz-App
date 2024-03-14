@@ -24,8 +24,8 @@ import {
             element:<Home />
         },
         {
-            path:"/quizz",
-            element:<Quiz questions={jsQuizz.questions3} />
+            path:"/quiz/:categoryId",
+            element:<Quiz/>
         },
         {
             path:"/aboutus",

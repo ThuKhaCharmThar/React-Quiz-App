@@ -1,6 +1,6 @@
 export const jsQuizz = {
   //အထွေထွေ  10q
-  questions1: [
+  1: [
     {
       question: "တစ်ကုဋေမှာ သုညဘယ်နှစ်လုံးပါဝင်သည်နည်း",
       choices: ["၆", "၇", "၈", "၉"],
@@ -72,7 +72,7 @@ export const jsQuizz = {
   ],
 
   //မြန်မာနန်းတွင်း  9q
-  questions2: [
+  2: [
     {
       question: "ကုန်းဘောင်မင်းဆက်တွင် အသက်အရှည်ဆုံး ဘုရင်မှာ",
       choices: ["ဆင်ဖြူရှင်မင်း", "ဘကြီးတော်", "ဗဒုံမင်း", "ပုဂံမင်း"],
@@ -139,7 +139,7 @@ export const jsQuizz = {
   ],
 
   //မြန်မာ့သမိုင်း  10q
-  questions3: [
+  3: [
     {
       question: "ဂျပန်ခေတ် မြန်မာနိင်ငံ၏ အဓိပတိမှာ",
       choices: [
@@ -239,7 +239,7 @@ export const jsQuizz = {
   ],
 
   //မြန်မာ့ရုပ်ရှင်  9q
-  questions4: [
+  4: [
     {
       question: "မြန်မာ့ပထမဆုံးသော ရုပ်ရှင်ဇာတ်ကားအမည်မှာ မည်သည်ဖြစ်သနည်း",
       choices: [
@@ -326,7 +326,7 @@ export const jsQuizz = {
   ],
 
   // အာကာသ  10q
-  questions5: [
+  5: [
     {
       question: "နေမဟုတ်သော ကမ္ဘာနှဲ့အနီးဆုံး ကြယ်မှာ မည်သည်ဖြစ်သနည်း",
       choices: ["Alpha Centauri", "‌Sirius", "Proxima Centauri", "Betelgeuse"],
@@ -408,7 +408,7 @@ export const jsQuizz = {
   ],
 
   //မြန်မာစာပေ 10q
-  questions6: [
+  6: [
     {
       question: "ချစ်ခင်နှစ်သက်ခြင်းကို ဖြစ်စေသည့် ရသမှာ_____",
       choices: ["သန္တရသ", "‌ကရုဏာရသ", "သိင်္ဂါရ ရသ", "ဝီရ ရသ"],
@@ -490,7 +490,7 @@ export const jsQuizz = {
   ],
 
   // International Festival  10q
-  questions7: [
+  7: [
     {
       question:
         "ခရမ်းချဉ်သီးတွေနဲ့ ပစ်ပေါက်ပြီးဆော့ကြတဲ့ La Tomatine ပွဲတော်ကို ဘယ်နိုင်ငံမှာ ကျင်းပသနည်း",
@@ -568,7 +568,7 @@ export const jsQuizz = {
   ],
 
   // Math  10q
-  questions8: [
+  8: [
     {
       question: "၁၀၀ ရဲ့ သုံးပုံတစ်ပုံကို ဖော်ပြပါ",
       choices: ["၂၅", "‌၃၃.၃၃", "၂၀", "၆၀"],
@@ -640,7 +640,7 @@ export const jsQuizz = {
   ],
 
   // Money To Draw Taw Zin 10q
-  questions9: [
+  9: [
     {
       question: "_______ ဓားပြမှန်းသိ",
       choices: ["ပစ္စည်းလုမှ", "‌ဓားနဲ့ထိုးမှ", "ကျောချမှ", "ဓားထောက်မှ"],
@@ -730,7 +730,7 @@ export const jsQuizz = {
   ],
 
   //Money To Draw 2  10q
-  questions10: [
+  10: [
     {
       question: "နေရောင်ခြည်မှ အဓိကရရှိသော ဓာတ်ကိုဖော်ပြပါ",
       choices: ["ဗီတာမင် D", "‌ဗီတာမင် C", "ဗီတာမင် A", "ဗီတာမင် B"],

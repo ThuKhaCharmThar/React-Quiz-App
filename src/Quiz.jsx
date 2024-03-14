@@ -1,14 +1,23 @@
-import { useState } from "react";
-import { resultInitalState } from "./Constants";
-// import { TypeAnimation } from "react-type-animation";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { jsQuizz, resultInitalState } from "./Constants";
 
-const Quiz = ({ questions }) => {
+const Quiz = () => {
+  const { categoryId } = useParams();
+  const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answerIdx, setAnswerIdx] = useState(null);
   const [answer, setAnswer] = useState(null);
   const [result, setResult] = useState(resultInitalState);
   const [showResult, setShowResult] = useState(false);
   const { question, choices, correctAnswer } = questions[currentQuestion];
+
+  
+  useEffect(() => {
+    // Fetch questions based on category ID
+    const categoryQuestions = jsQuizz[categoryId] || []; // Handle case when questions are undefined
+    setQuestions(categoryQuestions);
+  }, [categoryId]);
 
   const onAnswerClick = (answer, index) => {
     setAnswerIdx(index);
@@ -59,14 +68,22 @@ const Quiz = ({ questions }) => {
               </span>
             </div>
             <ul className="p-3">
-              <h2 className="text-light text-center"data-aos="fade-down"
+              <h2
+                className="text-light text-center"
+                data-aos="fade-down"
                 data-aos-duration="1500"
                 data-aos-delay="500"
-                data-aos-offset="100">{question}</h2>
-              <div className="row mt-5 col-6 offset-3"data-aos="fade-right"
+                data-aos-offset="100"
+              >
+                {question}
+              </h2>
+              <div
+                className="row mt-5 col-6 offset-3"
+                data-aos="fade-right"
                 data-aos-duration="1500"
                 data-aos-delay="500"
-                data-aos-offset="100">
+                data-aos-offset="100"
+              >
                 {choices.map((answer, index) => (
                   <li
                     onClick={() => onAnswerClick(answer, index)}
@@ -96,41 +113,63 @@ const Quiz = ({ questions }) => {
             </div>
           </>
         ) : (
-          <div className="result text-white text-center mb-5" >
-            <h3 className=""data-aos="fade-down"
-          data-aos-duration="1500"
-          data-aos-delay="500"
-          data-aos-offset="100">Result</h3>
-            <p className=""data-aos="fade-right"
-          data-aos-duration="1500"
-          data-aos-delay="1000"
-          data-aos-offset="100">
-              Total Questions : <span style={{color:"#e8751a"}}>{questions.length}</span>
+          <div className="result text-white text-center mb-5">
+            <h3
+              className=""
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-offset="100"
+            >
+              Result
+            </h3>
+            <p
+              className=""
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="1000"
+              data-aos-offset="100"
+            >
+              Total Questions :{" "}
+              <span style={{ color: "#e8751a" }}>{questions.length}</span>
             </p>
-            <p className=""data-aos="fade-left"
-          data-aos-duration="1500"
-          data-aos-delay="1200"
-          data-aos-offset="100">
-              Total Score: <span style={{color:"#e4f313"}}>{result.score}</span>
+            <p
+              className=""
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="1200"
+              data-aos-offset="100"
+            >
+              Total Score:{" "}
+              <span style={{ color: "#e4f313" }}>{result.score}</span>
             </p>
-            <p className=""data-aos="fade-right"
-          data-aos-duration="1500"
-          data-aos-delay="1400"
-          data-aos-offset="100">
-              Correct Answers: <span style={{color:"#30e90b"}}>{result.correctAnswers}</span>
+            <p
+              className=""
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="1400"
+              data-aos-offset="100"
+            >
+              Correct Answers:{" "}
+              <span style={{ color: "#30e90b" }}>{result.correctAnswers}</span>
             </p>
-            <p className="mb-3"data-aos="fade-left"
-          data-aos-duration="1500"
-          data-aos-delay="1600"
-          data-aos-offset="100">
-              Wrong Answers: <span style={{color:"red"}}>{result.wrongAnswers}</span>
+            <p
+              className="mb-3"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="1600"
+              data-aos-offset="100"
+            >
+              Wrong Answers:{" "}
+              <span style={{ color: "red" }}>{result.wrongAnswers}</span>
             </p>
             <a className="try mt-5" onClick={onTryAgain}>
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-              Try Again</a>
+              Try Again
+            </a>
           </div>
         )}
       </div>
