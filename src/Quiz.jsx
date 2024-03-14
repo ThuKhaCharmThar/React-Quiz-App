@@ -51,52 +51,86 @@ const Quiz = ({ questions }) => {
       <div className="quiz-container">
         {!showResult ? (
           <>
-          <div className="text-center">
-            <span className="active-question-no">{currentQuestion + 1}</span>
-            <span className="total-question"><span className="spa">/</span>{questions.length}</span>
+            <div className="text-center">
+              <span className="active-question-no">{currentQuestion + 1}</span>
+              <span className="total-question">
+                <span className="spa">/</span>
+                {questions.length}
+              </span>
             </div>
-            <ul>
-              <h2 className="text-light text-center">{question}</h2>
-              <div className="row mt-5 col-6 offset-3">
+            <ul className="p-3">
+              <h2 className="text-light text-center"data-aos="fade-down"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-offset="100">{question}</h2>
+              <div className="row mt-5 col-6 offset-3"data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-offset="100">
                 {choices.map((answer, index) => (
                   <li
                     onClick={() => onAnswerClick(answer, index)}
                     key={answer}
-                    className={`${answerIdx === index ? "selected-answer" : null}`}
+                    className={`${
+                      answerIdx === index ? "selected-answer" : null
+                    }`}
                   >
-                    <span
-                      className=""
-                      data-aos="fade-up"
-                      data-aos-duration="2000"
-                    >
-                      {answer}
-                    </span>
+                    <span className="">{answer}</span>
                   </li>
                 ))}
               </div>
             </ul>
-            <div className="footter">
-              <button onClick={onClickNext} disabled={answerIdx === null}>
+
+            <div className="footter mb-3">
+              <a
+                className={"button" + (answerIdx === null ? " disabled" : "")}
+                onClick={onClickNext}
+                disabled={answerIdx === null}
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
                 {currentQuestion === questions.length - 1 ? "finish" : "Next"}
-              </button>
+              </a>
             </div>
           </>
         ) : (
-          <div className="result">
-            <h3>Result</h3>
-            <p>
-              Total Questions : <span>{questions.length}</span>
+          <div className="result text-white text-center mb-5" >
+            <h3 className=""data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-delay="500"
+          data-aos-offset="100">Result</h3>
+            <p className=""data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-delay="1000"
+          data-aos-offset="100">
+              Total Questions : <span style={{color:"#e8751a"}}>{questions.length}</span>
             </p>
-            <p>
-              Total Score: <span>{result.score}</span>
+            <p className=""data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-delay="1200"
+          data-aos-offset="100">
+              Total Score: <span style={{color:"#e4f313"}}>{result.score}</span>
             </p>
-            <p>
-              Correct Answers: <span>{result.correctAnswers}</span>
+            <p className=""data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-delay="1400"
+          data-aos-offset="100">
+              Correct Answers: <span style={{color:"#30e90b"}}>{result.correctAnswers}</span>
             </p>
-            <p>
-              Wrong Answers: <span>{result.wrongAnswers}</span>
+            <p className="mb-3"data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-delay="1600"
+          data-aos-offset="100">
+              Wrong Answers: <span style={{color:"red"}}>{result.wrongAnswers}</span>
             </p>
-            <button onClick={onTryAgain}> Try Again</button>
+            <a className="try mt-5" onClick={onTryAgain}>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Try Again</a>
           </div>
         )}
       </div>

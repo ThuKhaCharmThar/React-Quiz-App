@@ -5,7 +5,6 @@ $bg-accent: #e7e8e9;
 $foreground: #2d264b;
 $disabled: #9c9c9c;
 
-
 body {
   font-family: monospace;
   background: linear-gradient(to right, #000000, #000003);
@@ -20,18 +19,18 @@ body {
 .quiz-container {
   width: auto;
   max-width: 500px;
-  height: 90vh;
+  height: auto;
   max-height: 600px;
-  background:#000000;
+  background: #000000;
   border-radius: 4px;
-  margin: 50px auto;
+  margin: 10px auto;
   padding: 30px 20px;
   box-sizing: border-box;
 
   .quiz-container ul {
     padding: 0;
   }
-  
+
   .quiz-container ul li {
     list-style: none; /* Remove default list styling */
     margin-bottom: 10px; /* Add some space between choices */
@@ -43,7 +42,7 @@ body {
     width: 70%; /* Set width to 70% */
     margin: 0 auto; /* Center the li elements */
   }
-  
+
   @media (max-width: 768px) {
     .quiz-container {
       padding: 20px; /* Adjust padding for smaller screens */
@@ -58,9 +57,9 @@ body {
   .total-question {
     font-size: 16px;
     font-weight: 500;
-    color: #E8751A;
-    .spa{
-      color:aliceblue;
+    color: #e8751a;
+    .spa {
+      color: aliceblue;
     }
   }
 
@@ -77,10 +76,10 @@ body {
     li {
       text-decoration: none;
       list-style: none;
-      color: $foreground;
+      color: $bg;
       font-size: 16px;
       text-align: center;
-      background: $bg;
+      background: #000000;
       border: 1px solid $disabled;
       border-radius: 16px;
       padding: 11px;
@@ -89,47 +88,189 @@ body {
     }
 
     .selected-answer {
-      background: #3f87a6;
-      border: 1px solid #f69d31;
-      color: $bg;
+      background: #ffffff;
+      border: 1px solid #2926dd;
+      color: #000000;
     }
   }
   .footter {
     display: flex;
-    justify-content: flex-end;
-  }
-  button {
-    background: linear-gradient(#102129, #477523, #49361e);
-    border-radius: 9px;
-    font-size: 18px;
-    color: $bg;
-    padding: 10px 42px;
-    outline: none;
-    border: none;
-    margin-top: 15px;
-    cursor: pointer;
-    &:disabled {
-      background: $bg-accent;
-      color: $disabled;
-      cursor: not-allowed;
+    justify-content: flex-start;
+    a {
+      position: relative;
+      display: flex;
+      padding: 15px 30px;
+      width: 90px;
+      color: #2196f3;
+      margin: auto;
+      align-items: center;
+      text-align: center;
+      height: 30px;
+      justify-content: center;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-decoration: none;
+      // font-size: 24px;
+      overflow: hidden;
+      transition: 0.25;
+      // &:disabled {
+      //   background: $bg-accent;
+      //   color: $disabled;
+      //   cursor: not-allowed;
+      // }
+    }
+    .button.disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+    a:hover {
+      color: #255784;
+      background: #e4f313;
+      box-shadow: 0 0 5px #e4f313, 0 0 20px #e4f313, 0 0 40px #e4f313;
+      transition-delay: 0.3s;
+    }
+    a span {
+      position: absolute;
+      display: block;
+    }
+    a span:nth-child(1) {
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #e4f313);
+    }
+    a:hover span:nth-child(1) {
+      left: 100%;
+      transition: 1s;
+    }
+
+    a span:nth-child(2) {
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: line-gradient(180deg, transparent, #e4f313);
+    }
+
+    a:hover span:nth-child(2) {
+      top: 100%;
+      transition: 1s;
+      transition-delay: 0.1s;
+    }
+    a span:nth-child(3) {
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, #e4f313);
+    }
+    a:hover span:nth-child(3) {
+      right: 100%;
+      transition: 1s;
+      transition-delay: 0.1s;
+    }
+    a span:nth-child(4) {
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: line-gradient(360deg, transparent, #e4f313);
+    }
+    a:hover span:nth-child(4) {
+      bottom: 100%;
+      transition: 1s;
+      transition-delay: 0.4s;
     }
   }
 
   .result {
     text-align: center;
-    h3 {
+    h2 {
       font-size: 24px;
       letter-spacing: 1.4px;
       text-align: center;
     }
     p {
-      font-size: 16px;
+      font-size: 25px;
       font-weight: 500;
+    }
+    a {
+      position: relative;
+      display: flex;
+      padding: 15px 30px;
+      width: 180px;
+      color: #2196f3;
+      margin: auto;
+      align-items: center;
+      text-align: center;
+      height: 30px;
+      justify-content: center;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-decoration: none;
+      // font-size: 24px;
+      overflow: hidden;
+      transition: 0.25;
+    }
+    a:hover {
+      color: #000000;
+      background: #ee3017;
+      box-shadow: 0 0 5px #ee3017, 0 0 20px #ee3017, 0 0 40px #ee3017;
+      transition-delay: 0.5s;
+    }
+    a span {
+      position: absolute;
+      display: block;
+    }
+    a span:nth-child(1) {
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #ee3017);
+    }
+    a:hover span:nth-child(1) {
+      left: 100%;
+      transition: 1s;
+    }
 
-      span {
-        color: $primary;
-        font-size: 22px;
-      }
+    a span:nth-child(2) {
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: line-gradient(180deg, transparent, #ee3017);
+    }
+
+    a:hover span:nth-child(2) {
+      top: 100%;
+      transition: 1s;
+      transition-delay: 0.15s;
+    }
+    a span:nth-child(3) {
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, #ee3017);
+    }
+    a:hover span:nth-child(3) {
+      right: 100%;
+      transition: 1s;
+      transition-delay: 0.15s;
+    }
+    a span:nth-child(4) {
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: line-gradient(360deg, transparent, #ee3017);
+    }
+    a:hover span:nth-child(4) {
+      bottom: 100%;
+      transition: 1s;
+      transition-delay: 0.75s;
     }
   }
 }
@@ -158,7 +299,7 @@ body {
     color: #255784;
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-    transition-delay:0.5s;
+    transition-delay: 0.5s;
   }
   a span {
     position: absolute;
